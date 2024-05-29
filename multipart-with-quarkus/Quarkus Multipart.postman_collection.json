@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "292194db-f73c-44ad-a06d-c3d69987d42a",
+		"name": "Quarkus Multipart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27780006"
+	},
+	"item": [
+		{
+			"name": "new product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": [
+								"/C:/Users/David/Downloads/Questoes com Erro no Eveerest.txt",
+								"/C:/Users/David/Downloads/apache-maven-3.9.6-src/apache-maven-3.9.6/maven-core/src/test/resources/local-repo/marker.txt"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
